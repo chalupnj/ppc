@@ -1,0 +1,48 @@
+.features btn {
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Icons for features list */
+.img-container {
+    padding: 0.65rem;
+}
+
+.tagline {
+    text-align: center;
+}
+
+.mockup {
+    padding: 0.1rem 0;
+}
+
+/* Features list */
+.row p {
+    padding: 1rem 0;
+}
+
+.signup {
+    text-align: center;
+}
+
+.social {
+    text-align: right;
+}
+
+
+/* Media queries (to complete later) */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
