@@ -25,44 +25,42 @@
             </div> 
         </a>
         <form class="form-inline">
-            <button class="menu-btn signup btn btn-outline-success my-2 my-sm-0" id="menu-signup" type="submit">Sign up</button>
-            <button class="menu-btn btn btn-outline-success my-2 my-sm-0" id="menu-login" type="submit">Log in</button>
+            <button type="button" class="btn my-2 my-sm-0 green-btn" id="menu-signup" data-toggle="modal" data-target="#signupModal">Sign up</button>
+            <button class="menu-btn btn my-2 my-sm-0" id="menu-login" data-toggle="modal" data-target="#loginModal">Log in</button>
         </form>
     </nav>
 
     <!-- Hero image -->
     <div class="jumbotron">
-        <h1 class="display-4">Plan easily, party hard.</h1>
-        <p class="lead tagline">More information lorem ipsum.</p>
+        <h1>Party Planning and Collaboration</h1>
+        <p class="lead tagline">We make planning easy, so you can party hard.</p>
         <p class="lead">
-            <a class="btn btn-lg" id="lets-party" href="#" role="button">Let's Party!</a>
+            <a class="btn btn-lg purple-btn" data-toggle="modal" data-target="#signupModal">Let's Party!</a>
         </p>
-        <div class="img-container overlap">
-            <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif">
+        <div id="overlap">
+            <img id="hero-gif" src="images/hero gif.gif">
         </div>
     </div>
 
     <!-- Features -->
     <div class="container-fluid features">
-        <h2>All your planning needs, all in one place</h2>
+        <h2>Explore our all-in-one party planning platform</h2>
         <div class="row">
             <div class="card col-sm-6">
                 <div class="col-container">
-                    <img class="card-img-top" src="images/calendar-screen.png" alt="calendar page">
+                    <img class="card-img-top" src="images/timeline.png" alt="timeline page">
                     <div class="card-body">
-                        <h5 class="card-title">Checklist w/vendors</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn try-it">Try it now</a>
+                        <h5 class="card-title">Timeline</h5>
+                        <p class="card-text">Keep track of scheduling and check the progress of your party planning.</p>
                     </div>
                 </div>
             </div>
             <div class="card col-sm-6">
                 <div class="col-container">
-                    <img class="card-img-top" src="images/calendar-screen.png" alt="calendar page">
+                    <img class="card-img-top" src="images/checklist.png" alt="checklist">
                     <div class="card-body">
-                        <h5 class="card-title">Checklist w/vendors</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn try-it">Try it now</a>
+                        <h5 class="card-title">Checklist</h5>
+                        <p class="card-text">Keep track of what you need to do before the party, including vendor information.</p>
                     </div>
                 </div>
             </div>
@@ -70,21 +68,19 @@
         <div class="row">
             <div class="card col-sm-6">
                 <div class="col-container">
-                    <img class="card-img-top" src="images/calendar-screen.png" alt="calendar page">
+                    <img class="card-img-top" src="images/collaborators.png" alt="add collaborators">
                     <div class="card-body">
-                        <h5 class="card-title">Checklist w/vendors</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn try-it">Try it now</a>
+                        <h5 class="card-title">Invitations</h5>
+                        <p class="card-text">Send electronic invitations and track RSVPs.</p>
                     </div>
                 </div>
             </div>
             <div class="card col-sm-6">
                 <div class="col-container">
-                    <img class="card-img-top" src="images/calendar-screen.png" alt="calendar page">
+                    <img class="card-img-top" src="images/calendar.png" alt="calendar page">
                     <div class="card-body">
-                        <h5 class="card-title">Checklist w/vendors</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn try-it">Try it now</a>
+                        <h5 class="card-title">Calendar</h5>
+                        <p class="card-text">See all your tasks and events together in a calendar view.</p>
                     </div>
                 </div>
             </div>
@@ -98,50 +94,47 @@
             <div class="col-md-4">
                 <div class="row">
                     <div class="col persona">
-                        <img src="images/person1.png" alt="testimonial">
+                        <img src="images/person1.jpg" alt="testimonial">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col quote">
-                        <p>Cupcake ipsum dolor sit amet topping sesame snaps chocolate. Chupa chups cupcake icing chupa chups wafer. Wafer oat cake candy chupa chups macaroon sugar plum tiramisu cupcake dessert.</p>
+                        <p>“Party planning can be overwhelming, but with WeParty I know all the details have been thought through so I can enjoy seeing it all come together at the end.”</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="row">
                     <div class="col persona">
-                        <img src="images/person2.png" alt="testimonial">
+                        <img src="images/person2.jpg" alt="testimonial">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col quote">
-                        <p>Marzipan dessert soufflé marzipan cake lemon drops cake bonbon. Caramels chocolate bar oat cake marzipan sesame snaps sesame snaps ice cream marzipan. Candy jujubes cotton candy tiramisu pudding jelly beans cheesecake dessert.</p>
+                        <p>"I like that it lets you collaborate in real time. The revision history helps see what changes different people on your team made and when, which helps prevent fires.”</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="row">
                     <div class="col persona">
-                        <img src="images/person3.png" alt="testimonial">
+                        <img src="images/person3.jpg" alt="testimonial">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col quote">
-                        <p>Apple pie muffin biscuit jelly-o sesame snaps pastry lollipop. Sesame snaps gummi bears dragée lemon drops gummi bears. Carrot cake cheesecake croissant brownie.</p>
+                        <p>“The progress points are super helpful. That way everyone knows what is complete and where the friction points are.”</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Credit Flaticon author
-    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div> -->
-
     <!-- Last chance sign up button -->
     <div class="container-fluid center">
-        <h3>Pie topping carrot cake. Dragée macaroon biscuit chupa chups lemon drops.</h3>
+        <h3>Excited to start planning?</h3>
         <!-- Sign up button -->
-        <a class="btn signup btn-lg" id="last-chance" href="#" role="button">Sign up</a>
+        <a class="btn signup btn-lg purple-btn" data-toggle="modal" data-target="#signupModal">Get the Party Started</a>
     </div>
 
     <!-- Footer -->
@@ -152,41 +145,118 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link signup" href="#">Sign up</a>
+                    <a class="nav-link signup footer-btn" data-toggle="modal" data-target="#signupModal" href="#signupModal">Sign up</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Log in</a>
+                    <a class="nav-link signup footer-btn" data-toggle="modal" data-target="#loginModal" href="#loginModal">Log in</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sitemap</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link signup footer-btn" data-toggle="modal" data-target="#contactModal" href="#contactModal">Contact</a>
                 </li>
             </ul>
             <div class="social ml-auto">
                 <img class="icon" src="images/facebook.png" alt="facebook">
                 <img class="icon" src="images/twitter.png" alt="facebook">
                 <img class="icon" src="images/instagram.png" alt="facebook">
-            </diclass="icon">
+            </div>
         </div>
     </nav>
-
+  
     <!-- Signup modal -->
-    <div id="signupModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h1>SIGN UP</h1>
-
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="signupModalLabel">Create an Account</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="inputUsername">Name</label>
+                            <input type="username" class="form-control" id="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword1">Password</label>
+                            <input type="password" class="form-control" id="password1" aria-describedby="passwordHelp">
+                            <small id="passwordHelp" class="form-text text-muted">Must be 8-15 characters long.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword2">Confirm Password</label>
+                            <input type="password" class="form-control" id="password2">
+                        </div>
+                        <button type="submit" class="btn btn-primary purple-btn" data-dismiss="modal">Sign up</button>
+                    </form>
+                </div>
+            </div>
         </div>
-      
-      </div>
+    </div>
+
+    <!-- Login modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Log in to Your Account</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword1">Password</label>
+                            <input type="password" class="form-control" id="password1" aria-describedby="passwordHelp">
+                            <small id="passwordHelp" class="form-text text-muted"><Forgot href="#">Forgot your password?</a></small>
+                        </div>
+                        <button type="submit" class="btn btn-primary purple-btn" data-dismiss="modal">Log in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label for="emailInput">Email address</label>
+                        <input type="email" class="form-control">
+                        <div class="form-group">
+                            <label for="textInput">Message</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                    <button type="submit" class="btn btn-primary purple-btn" data-dismiss="modal">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- import jquery and scripts for modals and confetti cursor animation -->
-    <script src="scripts/modal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
