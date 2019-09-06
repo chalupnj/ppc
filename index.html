@@ -14,9 +14,6 @@
 
 <body>
 
-    <!-- Confetti cursor -->
-    <div class="cursor"></div>
-
     <!-- Menu bar -->
     <nav class="navbar navbar-top justify-content-between sticky-top">
         <a class="navbar-brand">
@@ -25,8 +22,8 @@
             </div> 
         </a>
         <form class="form-inline">
-            <button type="button" class="btn my-2 my-sm-0 green-btn" id="menu-signup" data-toggle="modal" data-target="#signupModal">Sign up</button>
-            <button class="btn my-2 my-sm-0" id="menu-login" data-toggle="modal" data-target="#loginModal">Log in</button>
+            <button type="button" class="btn my-2 my-sm-0 green-btn confetti" id="menu-signup" data-toggle="modal" data-target="#signupModal">Sign up</button>
+            <button class="btn my-2 my-sm-0 confetti" id="menu-login" data-toggle="modal" data-target="#loginModal">Log in</button>
         </form>
     </nav>
 
@@ -35,7 +32,7 @@
         <h1>Party Planning and Collaboration</h1>
         <p class="lead tagline">We make planning easy, so you can party hard.</p>
         <p class="lead">
-            <a class="btn btn-lg purple-btn" data-toggle="modal" data-target="#signupModal">Let's Party!</a>
+            <a class="btn btn-lg purple-btn confetti" data-toggle="modal" data-target="#signupModal">Let's Party!</a>
         </p>
         <div id="overlap">
             <img id="hero-gif" src="images/hero gif.gif">
@@ -134,7 +131,7 @@
     <div class="container-fluid center">
         <h3>Excited to start planning?</h3>
         <!-- Sign up button -->
-        <a class="btn signup btn-lg purple-btn" data-toggle="modal" data-target="#signupModal">Get the Party Started</a>
+        <a class="btn signup btn-lg purple-btn confetti" data-toggle="modal" data-target="#signupModal">Get the Party Started</a>
     </div>
 
     <!-- Footer -->
@@ -142,22 +139,28 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link confetti" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link signup footer-btn" data-toggle="modal" data-target="#signupModal" href="#signupModal">Sign up</a>
+                    <a class="nav-link signup footer-btn confetti" data-toggle="modal" data-target="#signupModal" href="#signupModal">Sign up</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link signup footer-btn" data-toggle="modal" data-target="#loginModal" href="#loginModal">Log in</a>
+                    <a class="nav-link signup footer-btn confetti" data-toggle="modal" data-target="#loginModal" href="#loginModal">Log in</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link signup footer-btn" data-toggle="modal" data-target="#contactModal" href="#contactModal">Contact</a>
+                    <a class="nav-link signup footer-btn confetti" data-toggle="modal" data-target="#contactModal" href="#contactModal">Contact</a>
                 </li>
             </ul>
             <div class="social ml-auto">
-                <img class="icon" src="images/facebook.png" alt="facebook">
-                <img class="icon" src="images/twitter.png" alt="facebook">
-                <img class="icon" src="images/instagram.png" alt="facebook">
+                <a class="confetti" href="https://www.facebook.com">
+                    <img class="icon" src="images/facebook.png" alt="facebook">
+                </a>
+                <a class="confetti" href="https://www.twitter.com">
+                    <img class="icon" src="images/twitter.png" alt="twitter">
+                </a>
+                <a class="confetti" href="https://www.facebook.com">
+                    <img class="icon" src="images/instagram.png" alt="instagram">
+                </a>
             </div>
         </div>
     </nav>
@@ -191,7 +194,7 @@
                             <label for="inputPassword2">Confirm Password</label>
                             <input type="password" class="form-control" id="password2">
                         </div>
-                        <button type="submit" class="btn btn-primary purple-btn" data-dismiss="modal">Sign up</button>
+                        <button type="submit" class="btn btn-primary purple-btn confetti" data-dismiss="modal">Sign up</button>
                     </form>
                 </div>
             </div>
@@ -219,7 +222,7 @@
                             <input type="password" class="form-control" id="password1" aria-describedby="passwordHelp">
                             <small id="passwordHelp" class="form-text text-muted"><Forgot href="#">Forgot your password?</a></small>
                         </div>
-                        <button type="submit" class="btn btn-primary purple-btn" data-dismiss="modal">Log in</button>
+                        <button type="submit" class="btn btn-primary purple-btn confetti" data-dismiss="modal">Log in</button>
                     </form>
                 </div>
             </div>
@@ -244,7 +247,7 @@
                             <label for="textInput">Message</label>
                             <textarea class="form-control" rows="3"></textarea>
                         </div>
-                    <button type="submit" class="btn btn-primary purple-btn" data-dismiss="modal">Send</button>
+                    <button type="submit" class="btn btn-primary purple-btn confetti" data-dismiss="modal">Send</button>
                     </form>
                 </div>
             </div>
@@ -260,11 +263,8 @@
     crossorigin="anonymous"></script>
     <script src="scripts/confetti.js"></script>
     <script type="text/javascript">
-        $(function(){
-            $('.cursor').confettiButton();
-        });  
-        $(document).mousemove(function(e) {
-            $('.cursor').css({left:e.pageX,top:e.pageY,})
+        $('.confetti').confettiButton({
+            hoverOnly: true
         });
     </script>
 
