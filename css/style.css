@@ -18,6 +18,12 @@ body {
     padding: 1rem;
 }
 
+.card-body,
+.col-container,
+.btn {
+    text-align: center;
+}
+
 .center {
     text-align: center;
     padding-bottom: 4rem;
@@ -33,12 +39,6 @@ body {
     border: 1px solid #f2f2f2;
     box-shadow: 0 0 0.5rem lightgray;
     z-index: 20;
-}
-
-.card-body,
-.col-container,
-.btn {
-    text-align: center;
 }
 
 .features {
@@ -96,7 +96,6 @@ h3 {
     background: linear-gradient(rgba(256, 256, 256, 0.7), rgba(256, 256, 256, 0.7)), url('../images/hero.jpg') right top;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
 }
 
 .lead {

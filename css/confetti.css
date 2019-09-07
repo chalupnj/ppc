@@ -13,7 +13,6 @@
 	left:										50%;
 	width:									0;
 	height:									0;
-	z-index: 								-1;	/* To ensure it appears _behind_ your button rather than on top */
 	pointer-events:						none;	/* To ensure it doesn't interfere with any other click events */
 }
 
